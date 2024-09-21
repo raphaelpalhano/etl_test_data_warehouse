@@ -1,0 +1,46 @@
+[project]
+name = "py-template"
+dynamic = ["version"]
+description = "A template for a Python project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "mypy>=1.0.0",
+    "pylint>=2.17.2",
+    "snowflake-connector-python>=3.1.0",
+    "python-dotenv>=1.0.0",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "joblib",
+    "threadpoolctl",
+    "scipy",
+    "sqlalchemy",
+    "snowflake-sqlalchemy",
+    "streamlit",
+    "folium",
+    "geopandas",
+    "ipywidgets",
+    "plotly",
+    "streamlit_folium"
+]
+
+[tool.pylint]
+max-line-length = 100
+disable = [
+    "C0103", # (invalid-name)
+    "C0114", # (missing-module-docstring)
+    "C0115", # (missing-class-docstring)
+    "C0116", # (missing-function-docstring)
+    "R0903", # (too-few-public-methods)
+    "R0913", # (too-many-arguments)
+    "W0105", # (pointless-string-statement)
+]

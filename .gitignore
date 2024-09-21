@@ -1,0 +1,4 @@
+.venv
+py_template.egg-info
+__pycache__
+.pytest_cache
